@@ -1,8 +1,9 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectConnection } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
-import { LinkDataModelService } from 'src/entities/mongodb/service/linkdata.model.service';
-import { CustomException, IHttpResponse } from 'src/Http/http.interface';
+
+import { CustomException, IHttpResponse } from 'src/shortlink/http.interface';
+import { LinkDataModelService } from './linkdata.model.service';
 import {
   ISaveLinkReq,
   ISaveLinkRes,

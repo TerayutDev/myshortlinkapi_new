@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Modules } from './modules/module.collection';
+import { Modules } from './shortlink/module.collection';
 
-import { ShortLinkModule } from './modules/shortlink/shortlink.module';
 import { AppController } from './app.controller';
+import { ShortLinkModule } from './shortlink/shortlink.module';
 @Module({
   imports: [
     ...Modules,
